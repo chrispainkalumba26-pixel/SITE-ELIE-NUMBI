@@ -1,0 +1,127 @@
+/* Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section photo */
+.photo-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image centrée */
+.photo-centree {
+    max-width: 70%; /* ajuste la taille ici */
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Cadre autour du titre */
+.info-titre {
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block; /* le cadre s'adapte au titre */
+}
+
+/* Texte libre en dessous du cadre */
+.info-libre {
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Espace entre les sections */
+.espace {
+    height: 50px;
+}
+
+/* Tableau */
+.table-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .photo-centree {
+        max-width: 90%;
+    }
+
+    .info-titre {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .info-libre {
+        font-size: 0.95rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
